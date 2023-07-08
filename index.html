@@ -8,5 +8,22 @@
     <script defer src="script.js"></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="formContainer">
+        <form id="playerDetailForm" action="example.com/path" method="post">
+          <label for="player1">Player X</label>
+          <input type="text" name="player1" id="player1" />
+
+          <label for="player2">Player O</label>
+          <input type="text" name="player2" id="player2" />
+
+          <button id="formSubmit" type="submit">Start Game</button>
+          <button id="formReset" type="reset">Restart Game</button>
+        </form>
+      </div>
+      <div id="resultContainer" class="resultEnhance"></div>
+      <div class="grid-container" id="gameBoard"></div>
+    </div>
+  </body>
 </html>
